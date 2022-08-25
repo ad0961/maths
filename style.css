@@ -1,0 +1,180 @@
+html{
+	-o-background:radial-gradient(circle,white,grey);
+	-webkit-background:radial-gradient(circle,white,grey);
+	-moz-background:radial-gradient(circle,white,grey);
+	background:radial-gradient(circle,white,grey);
+	height:100%;
+}
+
+#container{
+	height:400px;
+	width:550px;
+	background-color:#9bcce4;
+	margin:100px auto;
+	border-radius: 10px;
+	padding:20px;
+	-o-box-shadow: 0px 4px 0px 0px #028fdc;
+	-webkit-box-shadow: 0px 4px 0px 0px #028fdc;
+	-moz-box-shadow: 0px 4px 0px 0px #028fdc;
+	box-shadow: 0px 4px 0px 0px #028fdc;
+/*	box-shadow:  horizontal offset, vertical offset, blur radius, optional spread radius, color;*/
+	position:relative;
+/*	Setting the position to relative of this div because we'll be positioning its child relative to this parent div*/
+}
+
+#score{
+	background-color:#fbf16e;
+	padding:11px;
+	width:80px;
+	position:absolute;
+	left:470px;
+	-o-box-shadow:0px 4px #c1b50a;
+	-webkit-box-shadow:0px 4px #c1b50a;
+	-moz-box-shadow:0px 4px #c1b50a;
+	box-shadow:0px 4px #c1b50a;
+	color:#b5872a;
+	text-align:center;
+}
+
+#correct{
+	background-color:#37e20d;
+	padding:11px;
+	position:absolute;
+	left:265px;
+	color:white;
+	display: none;
+}
+
+#incorrect{
+	background-color:#f22a2a;
+	padding:11px;
+	position:absolute;
+	left:265px;
+	color:white;
+	display: none;
+}
+
+#question{
+	background-color:#9ca4ee;
+	height:150px;
+	width:450px;
+	margin:50px auto 10px auto;
+	text-align:center;
+	font-size:85px;
+	font-family:cursive, sans-serif;
+	line-height: 150px;
+	-o-box-shadow: 0px 4px #576ead;
+	-webkit-box-shadow: 0px 4px #576ead;
+	-moz-box-shadow: 0px 4px #576ead;
+	box-shadow: 0px 4px #576ead;
+}
+
+#suggestion{
+	height:50px;
+	width:450px;
+	background-color:#b78adc;
+	margin:10px auto;
+	text-align: center;
+	line-height: 50px;
+	-o-box-shadow:0px 4px #795ea7;
+	-webkit-box-shadow:0px 4px #795ea7;
+	-moz-box-shadow:0px 4px #795ea7;
+	box-shadow:0px 4px #795ea7;
+}
+
+#choices{
+	margin:5px auto;
+	height:100px;
+	width:450px;
+}
+
+.ans{
+	background-color:white;
+	height:90px;
+	color:black;
+	width:90px;
+	float:left;
+	border:1px solid black;
+	margin-right:27px;
+	text-align: center;
+	line-height: 85px;
+	box-shadow: 0px 4px #b2b2b2;
+	font-size: 30px;
+	font-family:cursive, sans-serif;
+	cursor:pointer;
+	position:relative;
+	-o-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+#ans4{
+	margin-right: 0px;
+}
+
+/*
+.ans:hover, #startreset:hover{
+	color:white;
+	background-color:#9ca4ee;
+	-o-box-shadow: 0px 4px #576ead;
+	-webkit-box-shadow: 0px 4px #576ead;
+	-moz-box-shadow: 0px 4px #576ead;
+	box-shadow: 0px 4px #576ead;
+}
+*/
+
+.ans:active, #startreset:active{
+	top:4px;
+	color:white;
+		background-color:#9ca4ee;
+	-o-box-shadow: 0px 0px #b2b2b2;
+	-moz-box-shadow: 0px 0px #b2b2b2;
+	-webkit-box-shadow: 0px 0px #b2b2b2;
+	box-shadow: 0px 0px #b2b2b2;
+}
+
+#startreset{
+	background-color: rgba(255,255,255,0.6);
+	padding:10px;
+	width:80px;
+	margin:0px auto;
+	box-shadow: 0px 4px #8da9d7;
+	cursor:pointer;
+	position:relative;
+	-o-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+	text-align:center;
+}
+
+#timeremaining{
+	background-color:rgba( 89, 220, 14, 0.85 );
+	padding:8px;
+	position:absolute;
+	top:398px;
+	left:380px;
+	-o-box-shadow: 0px 4px #8da9d7;
+	-moz-box-shadow: 0px 4px #8da9d7;
+	-webkit-box-shadow: 0px 4px #8da9d7;
+	box-shadow: 0px 4px #8da9d7;
+	border-radius:3px;
+	display:none;
+}
+
+#gameover{
+	background:linear-gradient(#efc671,#fa7e6d);
+	height:200px;
+	width:500px;
+	text-align:center;
+	color:white;
+	font-size:45px;
+	text-transform: uppercase;
+	position:absolute;
+	top:100px;
+	left:45px;
+	z-index:2;
+	display:none;
+	line-height: 25px;
+}
